@@ -66,3 +66,4 @@ create_env() {
 }
 
 header "Creating runtime environment"
+create_env # can't pipe the whole thing because piping causes subshells, preventing exports
